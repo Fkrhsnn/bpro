@@ -1,0 +1,4 @@
+nama = "Muhamad Fikri Ruli Husaini"
+nim = 20210801098
+print(nama)
+print(nim)
