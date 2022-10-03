@@ -1,4 +1,4 @@
-matriks =  [\
+matriks =  [
 
     [6, 5],
     
