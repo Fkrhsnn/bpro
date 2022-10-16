@@ -1,0 +1,109 @@
+
+TYPE DATA
+
+Rangkuman Type Data
+- String adalah jenis yang paling populer di bahasa pemrograman. Kita bisa membuatnya hanya dengan melampirkan karakter dalam tanda kutip. Python memperlakukan tanda kutip tunggal sama dengan tanda kutip ganda.
+- Tipe data integer adalah tipe data numerik yang menampung bilangan bulat. Contohnya bilangan 1,2,3 dan seterusnya. Sehingga setiap variabel yang memiliki nilai bilangan bulat, maka ia akan di kategorikan sebagai integer. Dalam bahasa Python, panjang dari data integer di batasi oleh besarnya memori yang tersedia.
+- Fungsi float () mengembalikan bilangan ke dalam bentuk float (bilangan dengan titik). Jadi fungsi ini akan mengubah argumennya yang berupa bilangan menjadi tipe float atau bilangan desimal.
+- Tuple adalah tipe data pada Python yang tidak dapat diubah. Artinya, sekali Tuple dibuat, maka isinya tidak dapat diubah atau di modifikasikan lagi. Selain tidak dapat diubah, tipe data ini juga bersifat terurut. Dengan begitu, data tersebut dapat kamu akses menggunakan indeks.
+- Complex () berfungsi untuk mengembalikan argumen bilangan riil dan imajiner ke bentuk kompleks. Jika argumennya di wakili dengan nilai string maka juga akan dikembalikan ke bentuk bilangan kompleks.
+- List adalah tipe data yang paling serbaguna yang tersedia dalam bahasa Python, yang dapat di tulis sebagai daftar nilai yang di pisahkan koma (item) antara tanda kurung siku. Hal penting tentang daftar adalah item dalam list tidak boleh sama jenisnya.
+- Type DataSet dalam bahasa pemrograman python adalah tipe data kolektif yang di gunakan untuk menyimpan banyak nilai dalam satu variabel dengan ketentuan: nilai anggota yang disimpan harus unik (tidak duplikat) nilai anggota yang sudah di masukkan tidak bisa di ubah lagi.
+- Fungsi frozenset () digunakan untuk mengubah suatu iterable ke bentuk objek set yang bersifat immutable (tidak dapat diubah). Sederhananya, frozenset adalah versi lain dari set dengan sifat immutable.
+
+# String
+from re import I
+
+a = "hello"
+print (a)
+print (type(a))
+
+# interger
+b = 12
+print (b)
+print (type(b))
+
+# float
+c = 10.5
+print (c)
+print (type(c))
+
+# tuple
+d = 20,5
+print (d)
+print (type(d))
+
+# data complex
+e = 1j
+print (e)
+print (type(e))
+
+z = complex ('5-9j')
+print (z)
+
+# type data list
+f = ["a","b","c"]
+print (f)
+print (type(f))
+
+#contoh 
+list_f = [1,2,3]
+print (list_f[0])
+#contoh tuple
+tuple_f = 1,2,3
+print (tuple_f[0])
+
+#contoh set
+set_f = {1,2,3}
+print (set_f)
+
+# type data set
+g = {"a","b","c"}
+print (g)
+print (type(g))
+
+#type data frozenset
+h = frozenset({1,2,3})
+print (type(h))
+
+#type data boolean
+i = True
+j = False
+print (i,j)
+print (type(i))
+print (type(j))
+
+
+VARIABEL
+
+Rangkuman Variabel
+- Variabel merupakan tempat penyimpanan data yang bersifat mutable, artinya nilainya bisa berubah-ubah. Variabel dalam python memiliki format penulisan nama_variabel = . Variabel dapat berisi teks maupun bilangan.
+- Parameter adalah sebutan untuk nilai inputan fungsi pada saat fungsi itu di definisikan, sedangkan argumen adalah sebutan untuk nilai inputan fungsi pada saat fungsi itu di panggil. Parameter merupakan sebuah sebutan nilai untuk inputan fungsi pada saat fungsi tersebut di definisikan, sedangan Argument adalah sebutan untuk nilai inputan fungsi pada saat fungsi tersebut di panggil.
+
+#variabel
+a = "Muhamad Fikri Ruli Husaini"
+def func():
+	a = "any"
+	print ("Selamat " + a)
+func()
+print (a)
+
+#definisi
+def tambah():
+	a = 20
+	b = 25
+	c = a + b
+	print (c)
+
+tambah ()
+
+#definisi parameter
+def data (nama,nim):
+	print(f"nama saya {nama} dan {nim}")
+data("Muhamad Fikri Ruli Husaini","20210801098")
+
+#contoh
+def total(sisi):
+	return sisi*sisi
+def segitiga(alas,tinggi):
+	return 0.5*alas*tinggi
